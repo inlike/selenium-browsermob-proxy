@@ -24,8 +24,8 @@ for entry in result['log']['entries']:
     url = entry['request']['url']
     print(url)
     if "http://map.weather.com.cn/static_data/101.js" in url:
-        response = entry['response']  # 相应对象
-        content = response['content']  # 相应内容对象
+        response = entry['response']  # 响应对象
+        content = response['content']  # 响应内容对象
         text = content['text']  # 响应内容
         print(response)
         break
